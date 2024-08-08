@@ -8,16 +8,16 @@ const perguntas = [
     
     {
         enunciado : "No âmbito social, você prefere :",
-        alternativas : [ Alternativa 1 , Alternativa2]
+        alternativas : [ "Alternativa 1" , "Alternativa2"]
     },
 
     {
         enunciado : "No âmbito ambiental, você prefere :",
-        alternativas : [ Alternativa 1 , Alternativa2]
+        alternativas : [ "Alternativa 3" , "Alternativa4"]
     },
 
     {
         enunciado : "No âmbito tecnólogico, você prefere :",
-        alternativas : [ Alternativa 1 , Alternativa2]
+        alternativas : [ "Alternativa 5" , "Alternativa6"]
     },
  ]
