@@ -18,6 +18,8 @@ const perguntas = [
 
     {
         enunciado : "No âmbito tecnólogico, você prefere :",
-        alternativas : [ "Alternativa 5" , "Alternativa 6"]
+        alternativas : [ "Alternativa 5" , "Alternativa     6"]
     },
  ]
+
+ let atual = 0;
