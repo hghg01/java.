@@ -7,7 +7,7 @@ const textoResultado = document.querySelector('.texto-resultado');
 const perguntas = [
 
     {
-        enunciado: "No âmbito social, Sua vó faleceu e não deixou testamento pronto. O que você faz? :",
+        enunciado: "No âmbito social, sua vó faleceu e não deixou testamento pronto. O que você faz? ",
         alternativas: [{
             texto: "Furta tudo que há de valor e foge com toda a herança para si mesmo. Sua família toda morre de miséria, mas você se casa e cria uma nova família.",
             afirmacao: "Afirmação 1"
@@ -19,7 +19,7 @@ const perguntas = [
     },
 
     {
-        enunciado: "No âmbito ambiental, Você está em Colombo e vê uma queimada.O que você faz? :",
+        enunciado: "No âmbito ambiental, você está em Colombo e vê uma queimada. O que você faz? ",
         alternativas: [{
             texto: "Descarta a bituca do seu cigarro naqueimada, aumentando-a. Mas o cheiro dafumaca te causa ânsia e você nunca maisconsegue fumar, o que evita um câncer depulmão.",
             afirmacao: "Afirmação 3"
@@ -31,7 +31,7 @@ const perguntas = [
     },
 
     {
-        enunciado: "No âmbito tecnólogico, Você possui controle da maior empresa de IA do mundo. O que você escolhe? :",
+        enunciado: "No âmbito tecnólogico, você possui controle da maior empresa de IA do mundo. O que você escolhe? ",
         alternativas: [{
             texto: "Fazer a tecnologia ser uma mão amiga na realização de trabalhos mais pesados e fornecer assistência para diminuir o peso no trabalho humano. Perde o emprego e vira mendigo.",
             afirmacao: "Afirmação 5"
