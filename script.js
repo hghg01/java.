@@ -26,7 +26,7 @@ const perguntas = [
         },
         {
             texto: "Liga pra instituição de proteção ao meioambiente do município. Mas eles acham que foi você quem aumentou a queimada porque você estava com um cigarro namão.",
-            afirmacao: "Afrimação 4"
+            afirmacao: "Afirmação 4"
         },]
     },
 
