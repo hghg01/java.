@@ -26,7 +26,7 @@ const perguntas = [
  let perguntaAtual;
 
  function mostraPerguntas (){
-    perguntaAtual[atual];
+    perguntaAtual=perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
 
  }
