@@ -10,7 +10,7 @@ const perguntas = [
         enunciado: "No âmbito social, sua vó faleceu e não deixou testamento pronto. O que você faz? ",
         alternativas: [{
             texto: "Furta tudo que há de valor e foge com toda a herança para si mesmo. Sua família toda morre de miséria, mas você se casa e cria uma nova família.",
-            afirmacao: "Afirmação 1"
+            afirmacao: "é "
         },
         {
             texto: "Propõe uma divisão igualitária de todos os bens entre sua família. Mas fica com quase nada da herança e sua família te odeia.",
@@ -43,8 +43,10 @@ const perguntas = [
         ]
     }
 ]
- let atual = 0;
+let atual = 0;
 let perguntaAtual;
+let historiaFinal= "";
+
 
 function mostraPerguntas() {
     perguntaAtual = perguntas[atual];
@@ -58,14 +60,17 @@ function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativa = document.createElement("button");
         botaoAlternativa.textContent = alternativa.texto;
-        botaoAlternativa.addEventListener("click", function(){
-        atual ++;
-        mostraPerguntas();
-    })
+        botaoAlternativa.addEventListener("click", ()=> opcaoSelecionada(afirmacao));
         caixaAlternativas.appendChild(botaoAlternativa);
 
-    
     }
+    }
+    function opcaoSelecionada(){
+        const afirmacoes = opcaoSelecionada.afirmacoes;
+
+        atual ++;
+        mostraPerguntas();
+    
 }
 
 
