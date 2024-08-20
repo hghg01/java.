@@ -72,9 +72,9 @@ function mostraAlternativas() {
 
     }
     }
-    function respostaSelecionada (opcaoSelecionada){
-        const afirmacoes = opcaoSelecionada.afirmacao;
-        historiaFinal = 
+    function respostaSelecionada (alternativa){
+        const afirmacoes = alternativa.afirmacao;
+        historiaFinal += afirmacoes + "";
 
         atual ++;
         mostraPerguntas();
