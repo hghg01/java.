@@ -45,21 +45,21 @@ const perguntas = [
 ]
 let atual = 0;
 let perguntaAtual;
-let historiaFinal= "";
+let historiaFinal = "";
 
 
 function mostraPerguntas() {
 
-    if(atual >= perguntas.leght){
-       mostraResultado()
-       return;
+    if (atual >= perguntas.leght) {
+        mostraResultado()
+        return;
 
     }
 
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
-    mostraAlternativas ();
+    mostraAlternativas();
 
 }
 
@@ -67,22 +67,22 @@ function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativa = document.createElement("button");
         botaoAlternativa.textContent = alternativa.texto;
-        botaoAlternativa.addEventListener("click", ()=> respostaSelecionada(alternativa));
+        botaoAlternativa.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativa);
 
     }
-    }
-    function respostaSelecionada (alternativa){
-        const afirmacoes = alternativa.afirmacao;
-        historiaFinal += afirmacoes + "";
+}
+function respostaSelecionada(alternativa) {
+    const afirmacoes = alternativa.afirmacao;
+    historiaFinal += afirmacoes + "";
 
-        atual ++;
-        mostraPerguntas();
-    
+    atual++;
+    mostraPerguntas();
+
 }
 
-function mostraResultado(){
-    caixaPerguntas.textContent= "Em resumo, você escolheu..."
+function mostraResultado() {
+    caixaPerguntas.textContent = "Em resumo, você escolheu..."
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
